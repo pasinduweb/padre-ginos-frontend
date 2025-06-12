@@ -34,9 +34,7 @@ export default function Order() {
   let price, selectedPizza;
   if (!loading) {
     selectedPizza = pizzaTypes.find((pizza) => pizzaType === pizza.id);
-    price = intl.format(
-      selectedPizza.sizes ? selectedPizza.sizes[pizzaSize] : "",
-    );
+    price = intl.format(selectedPizza.sizes ? selectedPizza.sizes[pizzaSize] : "");
   }
 
   useEffect(() => {
@@ -57,20 +55,13 @@ export default function Order() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            setCart([
-              ...cart,
-              { pizza: selectedPizza, size: pizzaSize, price },
-            ]);
+            setCart([...cart, { pizza: selectedPizza, size: pizzaSize, price }]);
           }}
         >
           <div>
             <div>
               <label htmlFor="pizza-type">Pizza Type</label>
-              <select
-                onChange={(e) => setPizzaType(e.target.value)}
-                name="pizza-type"
-                value={pizzaType}
-              >
+              <select onChange={(e) => setPizzaType(e.target.value)} name="pizza-type" value={pizzaType}>
                 {pizzaTypes.map((pizza) => (
                   <option key={pizza.id} value={pizza.id}>
                     {pizza.name}
@@ -122,11 +113,7 @@ export default function Order() {
             <h3>LOADING …</h3>
           ) : (
             <div className="order-pizza">
-              <Pizza
-                name={selectedPizza.name}
-                description={selectedPizza.description}
-                image={selectedPizza.image}
-              />
+              <Pizza name={selectedPizza.name} description={selectedPizza.description} image={selectedPizza.image} />
               <p>{price}</p>
             </div>
           )}
