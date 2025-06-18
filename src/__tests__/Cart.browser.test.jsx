@@ -17,7 +17,7 @@ test("snapshot with some stuff in cart", () => {
             name: "The Pepperoni Pizza",
             category: "Classic",
             description: "Mozzarella Cheese, Pepperoni",
-            image: "/public/pizzas/pepperoni.webp",
+            image: "/pizzas/pepperoni.webp",
             sizes: {
               S: 9.75,
               M: 12.5,
@@ -33,7 +33,7 @@ test("snapshot with some stuff in cart", () => {
             name: "The Chicken Pesto Pizza",
             category: "Chicken",
             description: "Chicken, Tomatoes, Red Peppers, Spinach, Garlic, Pesto Sauce",
-            image: "/public/pizzas/ckn_pesto.webp",
+            image: "/pizzas/ckn_pesto.webp",
             sizes: {
               S: 12.75,
               M: 16.75,
@@ -49,7 +49,7 @@ test("snapshot with some stuff in cart", () => {
             name: "The Barbecue Chicken Pizza",
             category: "Chicken",
             description: "Barbecued Chicken, Red Peppers, Green Peppers, Tomatoes, Red Onions, Barbecue Sauce",
-            image: "/public/pizzas/bbq_ckn.webp",
+            image: "/pizzas/bbq_ckn.webp",
             sizes: {
               S: 12.75,
               M: 16.75,

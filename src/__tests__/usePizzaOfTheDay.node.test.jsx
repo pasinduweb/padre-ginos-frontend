@@ -11,7 +11,7 @@ const testPizza = {
   name: "The Calabrese Pizza",
   category: "Supreme",
   description: "Salami, Pancetta, Tomatoes, Red Onions, Friggitello Peppers, Garlic",
-  image: "/public/pizzas/calabrese.webp",
+  image: "/pizzas/calabrese.webp",
   sizes: { S: 12.25, M: 16.25, L: 20.25 },
 };
 
