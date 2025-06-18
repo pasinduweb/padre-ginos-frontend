@@ -116,7 +116,7 @@ function Order() {
             <button type="submit">Add to Cart</button>
           </div>
           {loading ? (
-            <h3>LOADING …</h3>
+            <h3>LOADING...</h3>
           ) : (
             <div className="order-pizza">
               <Pizza name={selectedPizza.name} description={selectedPizza.description} image={selectedPizza.image} />
@@ -125,7 +125,7 @@ function Order() {
           )}
         </form>
       </div>
-      {loading ? <h2>LOADING …</h2> : <Cart checkout={checkout} cart={cart} />}
+      {loading ? <h2>LOADING...</h2> : <Cart checkout={checkout} cart={cart} />}
     </div>
   );
 }
